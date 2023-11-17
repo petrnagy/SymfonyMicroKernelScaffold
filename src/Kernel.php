@@ -13,11 +13,6 @@ class Kernel extends BaseKernel
 {
     use MicroKernelTrait;
 
-    public function onKernelRequest()
-    {
-        echo '<pre>' . __FILE__ . '@' . __LINE__ . ' <--- YOU ARE HERE </pre>';die;
-    }
-
     public function registerBundles(): array
     {
         $bundles = [
